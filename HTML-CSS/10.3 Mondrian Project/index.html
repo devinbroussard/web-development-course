@@ -19,11 +19,84 @@
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
     */
+
+    .container-wrapper {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .container {
+      display: grid;
+      height: 748px;
+      width: 748px;
+      background-color: #000;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+      gap: 9px;
+    }
+    
+    .bg-red {
+      background-color: #E72F24;
+    }
+
+    .bg-white {
+      background-color: #F0F1EC;
+    }
+
+    .bg-yellow {
+      background-color: #F9D01E;
+    }
+
+    .bg-black {
+      background-color: #232629;
+    }
+
+    .item-2 {
+      grid-column-start: 2;
+      grid-column-end: -1;
+    }
+
+    .item-3 {
+      grid-row: span 2;
+    }
+
+    .item-4 {
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+
+    .bg-blue {
+      background-color: #004592;
+      border-bottom: 1px ;
+    }
+
+    .item-5 {
+      border-bottom: 10px solid #000;
+    }
+
+    .item-6 {
+      grid-row: span 2;
+    }
   </style>
 </head>
 
 <body>
-  <!-- Write your HTML here -->
+  <div class="container-wrapper">
+    <div class="container">
+      <div class="bg-red"></div>
+      <div class="bg-white item-2"></div>
+      <div class="bg-white item-3"></div>
+      <div class="bg-white item-4"></div>
+      <div class="bg-blue item-5"></div>
+      <div class="bg-white item-6"></div>
+      <div class="bg-white"></div>
+      <div class="bg-yellow"></div>
+      <div class="bg-black"></div>
+    </div>
+  </div>
 </body>
 
 </html>
