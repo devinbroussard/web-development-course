@@ -11,3 +11,10 @@ document.querySelector(".img1").setAttribute('src', path1)
 document.querySelector(".img2").setAttribute('src', path2)
 
 console.log(path1);
+
+let h1Text;
+if (random1 > random2) h1Text = '🚩 Player one wins!'
+if (random2 > random1) h1Text = 'Player two wins! 🚩'
+if (random1 === random2) h1Text = 'Draw!'
+
+document.querySelector('h1').innerHTML = h1Text
